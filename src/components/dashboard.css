@@ -1,0 +1,104 @@
+.how-to-use {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  background: #fffdfb;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.how-to-use h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #6d4c41;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.step-card {
+  background: #f9f1e7;
+  padding: 1.5rem 1rem;
+  border-radius: 16px;
+  border: 1px solid #f3ddd2;
+  box-shadow: 0 4px 12px rgba(78, 52, 46, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-6px);
+}
+
+.step-card h3 {
+  color: #4e342e;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.step-card p {
+  font-size: 0.95rem;
+  color: #5e4b44;
+}
+@media (max-width: 768px) {
+  .info-panel {
+    padding: 16px;
+  }
+
+  .info-top {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.dashboard {
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .dashboard h1 {
+    font-size: 1.5rem;
+  }
+}
+.scan-quick-access {
+  background-color: #f8eee4;
+  border: 1px solid #decfc0;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.scan-quick-access h2 {
+  color: #5e4023;
+  margin-bottom: 8px;
+}
+
+.scan-button {
+  display: inline-block;
+  margin-top: 12px;
+  background-color: #6f4e37;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.scan-button:hover {
+  background-color: #5a3d2b;
+}
+

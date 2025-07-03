@@ -1,0 +1,61 @@
+/* === Payment Page: Coffee Theme === */
+.home {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to bottom right, #fff8f2, #fef5ec);
+  min-height: 80vh;
+  font-family: "Segoe UI", sans-serif;
+  color: #5e4033;
+}
+
+/* Payment Title */
+.title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #6b3e2e;
+}
+
+/* Amount Info */
+.home p {
+  font-size: 1.2rem;
+  color: #7a5b4a;
+  margin: 0.8rem 0;
+  font-weight: 500;
+}
+
+/* Payment Button */
+.btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  background: linear-gradient(135deg, #b67d5c, #836953);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 16px rgba(150, 105, 80, 0.2);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #836953, #b67d5c);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 20px rgba(96, 66, 50, 0.25);
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}

@@ -1,0 +1,135 @@
+/* === Info Panel Container (Coffee Theme) === */
+.info-panel {
+  width: 100%;
+  background: rgba(255, 250, 245, 0.9); /* Creamy coffee background */
+  border-radius: 16px;
+  padding: 24px;
+  margin: 24px 0;
+  box-shadow: 0 8px 24px rgba(68, 44, 26, 0.08);
+  backdrop-filter: blur(6px);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(232, 207, 182, 0.4);
+}
+
+/* === Top Row === */
+.info-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Greeting */
+.greeting {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #5e4b44; /* Coffee text */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Actions === */
+.actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.theme-btn, .notify-btn {
+  background: linear-gradient(to right, #a47148, #6d4c41); /* Mocha tones */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(96, 66, 50, 0.2);
+}
+
+.theme-btn:hover, .notify-btn:hover {
+  background: linear-gradient(to right, #6d4c41, #a47148);
+  transform: translateY(-2px);
+}
+
+/* === Stats Section === */
+.stats {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #4e342e;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f6ede5; /* latte background */
+  padding: 10px 14px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+  box-shadow: inset 0 1px 2px rgba(150, 105, 80, 0.05);
+}
+
+.stat:hover {
+  background: #e9dbce;
+}
+
+/* === Dark Theme === */
+.info-panel.dark {
+  background: #3a2d2b;
+  color: #f8f5f2;
+  border: 1px solid rgba(148, 134, 112, 0.2);
+}
+
+.info-panel.dark .greeting {
+  color: #ffe6c9;
+}
+
+.info-panel.dark .stat {
+  background: #4a3b38;
+  color: #f1f1eb;
+}
+
+.info-panel.dark .stat:hover {
+  background: #594743;
+}
+
+body.dark-theme {
+  background-color: #2f221f;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .greeting {
+    font-size: 1.4rem;
+  }
+
+  .theme-btn, .notify-btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .stat {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .info-panel {
+    padding: 16px;
+  }
+
+  .info-top {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

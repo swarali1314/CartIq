@@ -1,0 +1,435 @@
+/* === Base Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e9f1fb, #ffffff);
+  color: #1e1e1e;
+}
+
+/* === Container Card === */
+.app-container {
+  text-align: center;
+  background: #ffffff;
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  max-width: 450px;
+  width: 90%;
+  margin: 4rem auto;
+}
+
+.app-container:hover {
+  transform: scale(1.01);
+}
+
+/* === Home Page === */
+.home {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* === Title & Subtitle === */
+.title, .home-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.subtitle, .home-subtitle {
+  font-size: 1.1rem;
+  color: burlywood;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* === Buttons === */
+.btn {
+  padding: 0.9rem 2.2rem;
+  font-size: 1.05rem;
+  margin: 0.6rem;
+  cursor: pointer;
+  background: linear-gradient(145deg, #1a73e8, #0c2e60);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(26, 115, 232, 0.25);
+}
+
+.btn:hover {
+  background: linear-gradient(145deg, #0c2e60, #1a73e8);
+  transform: translateY(-2px);
+}
+
+/* === Tab Buttons === */
+.tab-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.tab-buttons button {
+  background: linear-gradient(135deg, #3f51b5, #1a237e);
+  color: white;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 250px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(63, 81, 181, 0.3);
+  text-align: center;
+}
+
+.tab-buttons button:hover {
+  background: linear-gradient(135deg, #1a237e, #3f51b5);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(26, 35, 126, 0.35);
+}
+
+.btn-subtext {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 0.4rem;
+  color: #e0e0e0;
+}
+
+/* === Home Container Section === */
+.home-container {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-container h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  color: #1a237e;
+  font-weight: bold;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 600px) {
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tab-buttons button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .btn-subtext {
+    font-size: 0.85rem;
+  }
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-item {
+  margin: 12px 0;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+}
+.clear-cart-btn {
+  margin-top: 20px;
+  background-color: #ff4444;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.clear-cart-btn:hover {
+  background-color: #dd3333;
+}
+/* src/Scan.css */
+
+.scanner-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+#reader {
+  width: 100%;
+  height: 300px;
+}
+
+/* 🔴 Animated scan line */
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: red;
+  opacity: 0.7;
+  animation: scanMove 2s linear infinite;
+  z-index: 2;
+}
+
+@keyframes scanMove {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: calc(100% - 3px);
+  }
+  100% {
+    top: 0;
+  }
+}
+/* === Home Container Section (Coffee Theme) === */
+.home-container {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: linear-gradient(to bottom right, #fef9f4, #fffaf6);
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Home Title === */
+.home-container h1 {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+  color: #5e4033; /* Rich coffee brown */
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Subtitle === */
+.subtitle {
+  font-size: 1.2rem;
+  color: #a47148; /* Soft mocha */
+  margin-bottom: 2.5rem;
+  font-style: italic;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* === Button Section === */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.tab-buttons button {
+  background: linear-gradient(135deg, #b67d5c, #836953); /* Mocha caramel */
+  color: white;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  cursor: pointer;
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(150, 105, 80, 0.15);
+  text-align: center;
+}
+
+.tab-buttons button:hover {
+  background: linear-gradient(135deg, #836953, #b67d5c);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(96, 66, 50, 0.2);
+}
+
+/* === Subtext below buttons === */
+.btn-subtext {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-top: 0.4rem;
+  color: #f4e5da;
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 600px) {
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .tab-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .tab-buttons button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .btn-subtext {
+    font-size: 0.85rem;
+  }
+}
+/* === Scanner Page Wrapper (Coffee Theme) === */
+.scanner-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fffaf6;
+  box-shadow: 0 10px 25px rgba(90, 60, 40, 0.15);
+  padding: 1rem;
+}
+
+/* === Scanner Reader Box === */
+#reader {
+  width: 100%;
+  height: 300px;
+  background-color: #fef1e7;
+  border: 2px dashed #b67d5c;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* === Animated Scan Line === */
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #a47148; /* Mocha red-brown */
+  opacity: 0.7;
+  animation: scanMove 2s linear infinite;
+  z-index: 2;
+  border-radius: 2px;
+}
+
+@keyframes scanMove {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: calc(100% - 4px);
+  }
+  100% {
+    top: 0;
+  }
+}
+
+/* === Scan Instructions === */
+.scan-instructions {
+  text-align: center;
+  margin-top: 1.2rem;
+  font-size: 1.1rem;
+  color: #5e4033;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 500px) {
+  .scanner-wrapper {
+    padding: 0.5rem;
+  }
+
+  #reader {
+    height: 260px;
+  }
+
+  .scan-instructions {
+    font-size: 1rem;
+  }
+}
+button, input {
+  max-width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  button {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+.scan-error {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 12px;
+  margin-top: 16px;
+  border-radius: 8px;
+  border: 1px solid #ffeeba;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.offline-banner {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #f5c6cb;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.scan-error {
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ffeeba;
+  margin-top: 10px;
+  text-align: center;
+}

@@ -1,0 +1,86 @@
+/* === Profile Container === */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #fff8f2, #fef5ec);
+  min-height: 80vh;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* === Profile Card === */
+.profile-card {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(90, 60, 40, 0.15);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  border: 1px solid #f3e7d7;
+}
+
+/* === Avatar Image === */
+.profile-avatar-img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  border: 4px solid #d8b08c; /* Light mocha border */
+  margin-bottom: 1rem;
+  background-color: #f7e3d7;
+  box-shadow: 0 6px 12px rgba(90, 60, 40, 0.1);
+}
+
+/* === Welcome Text === */
+.profile-card h2 {
+  font-size: 1.8rem;
+  color: #5e4033;
+  margin-bottom: 0.5rem;
+}
+
+/* === Email Info === */
+.profile-card p {
+  font-size: 1rem;
+  color: #7a5b4a;
+  margin-bottom: 1.5rem;
+}
+
+/* === Divider === */
+.profile-divider {
+  width: 80%;
+  height: 1px;
+  background-color: #e9d6c8;
+  margin: 1.5rem auto;
+}
+
+/* === Badge === */
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #b67d5c, #836953);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(150, 105, 80, 0.2);
+}
+
+/* === Responsive === */
+@media screen and (max-width: 500px) {
+  .profile-card {
+    padding: 2rem 1.2rem;
+  }
+
+  .profile-card h2 {
+    font-size: 1.6rem;
+  }
+
+  .profile-card p {
+    font-size: 0.95rem;
+  }
+
+  .badge {
+    font-size: 0.9rem;
+  }
+}
